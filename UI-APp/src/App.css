@@ -1,0 +1,13 @@
+.sparent{
+  display:flex ;
+  flex-direction: row;
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+.cards::-webkit-scrollbar {
+  display: none;
+}

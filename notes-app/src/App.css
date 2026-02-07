@@ -1,0 +1,117 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+/* FORM SECTION */
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  margin: 50px;
+}
+
+.input input,
+.input textarea {
+  padding: 10px;
+  border-radius: 12px;
+  color: white;
+  border: 2px solid white;
+  background-color: black;
+  font-weight: 600;
+}
+
+.input input {
+  height: 45px;
+  text-align: center;
+}
+
+.input textarea {
+  height: 140px;
+  resize: none;
+}
+
+.input button {
+  width: 120px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: center;
+}
+
+.input button:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease;
+}
+
+/* NOTES SECTION */
+.notescorner {
+  width: 60%;
+  padding: 40px;
+}
+
+.notescorner h1 {
+  color: white;
+}
+
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* INDIVIDUAL NOTE CARD */
+.notes div {
+  width: 220px;
+  min-height: 200px;
+  background-color: rgb(232, 200, 140);
+  padding: 15px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.notes h1 {
+  font-size: 18px;
+  margin: 0;
+  background: none;
+  color: black;
+}
+
+.notes p {
+  font-size: 14px;
+  background: none;
+  color: black;
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+
+.notes button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.notes button:hover {
+  background-color: red;
+  transition: 0.2s ease;
+}
